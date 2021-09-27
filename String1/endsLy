@@ -1,0 +1,17 @@
+// Given a string, return true if it ends in "ly".
+
+public boolean endsLy(String str) {
+  int length = str.length();
+  String ans = "";
+  if(length > 1) 
+  {
+    ans = str.substring(length - 2);
+  }
+  else 
+  {
+    ans = str.substring(length);
+  }
+  int Ly = ans.indexOf("ly");
+  if(Ly < 0) return false;
+  else return true;
+}
