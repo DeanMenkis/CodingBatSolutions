@@ -1,0 +1,9 @@
+// Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
+
+public String nonStart(String a, String b) {
+  int lengthA = a.length();
+  int lengthB = b.length();
+  a = a.substring(1, lengthA);
+  b = b.substring(1, lengthB);
+  return a + b;
+}
