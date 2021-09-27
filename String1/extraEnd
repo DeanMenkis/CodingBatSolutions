@@ -1,0 +1,13 @@
+// Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
+
+public String extraEnd(String str) {
+  // defines length of string
+  int length = str.length();
+  // if it's greater than 2 we chop off all but the last two letters
+  if(length > 2) 
+  {
+    str = str.substring(length - 2, length);
+    return str + str + str;
+  }
+  return str + str + str;
+}
